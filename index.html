@@ -982,6 +982,24 @@ body,#app{background:var(--ground);color:var(--ink);font-family:var(--f-body);le
 #app.tone-light:not(.board-on) #caption::after,#app.tone-light #top #topL::after,#app.tone-light #top #topR::after,
 #app.tone-light #rail::after,#app.tone-light #drawCorner::after{opacity:.35}
 #app.tone-light:not(.board-on) #caption h1,#app.tone-light:not(.board-on) #caption p.body{text-shadow:0 0 .25em rgba(255,255,255,.85)!important}
+
+/* ---------- performance: Technical Studies ---------- */
+/* nothing animates behind the library */
+#app.board-on #stage{animation:none!important}
+/* ambient glow: blur a tiny layer and scale it up (same look, a fraction of the GPU work), and keep it still */
+.lib-ambient{inset:auto;left:42.5%;top:42.5%;width:15%;height:15%;overflow:visible;
+  filter:blur(11px) saturate(170%);transform:scale(8);transform-origin:50% 50%;will-change:transform;contain:strict}
+.lib-ambient i{animation:none!important;transition:opacity 1.2s var(--ease)}
+/* card glows: the same small-then-scaled trick */
+.lib-amb{inset:auto;left:38.25%;top:37%;width:23.5%;height:22%;border-radius:.5em;
+  filter:blur(9.5px) saturate(190%) brightness(1.1);transform:scale(4);transform-origin:50% 50%;
+  transition:opacity .7s var(--ease),transform .9s var(--ease)}
+#app.lib-on .lib-card:hover .lib-amb,#app.lib-on .lib-card:focus-visible .lib-amb{transform:scale(4.5)}
+/* cards: no per-card backdrop blur, a denser tint gives the same smoky glass over the glow */
+#app.lib-on .lib-card{-webkit-backdrop-filter:none;backdrop-filter:none;background:rgba(24,24,28,.6)}
+#app.lib-on .lib-cover i,#app.lib-on .lib-cover em{-webkit-backdrop-filter:none;backdrop-filter:none;background:rgba(20,20,24,.72)}
+#app.lib-on .lib-cover{-webkit-mask-image:none;mask-image:none}
+#app.lib-on .lib-filter{-webkit-backdrop-filter:none;backdrop-filter:none;background:rgba(255,255,255,.1)}
 </style>
 
 </head>
