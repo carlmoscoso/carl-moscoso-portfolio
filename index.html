@@ -262,7 +262,7 @@ a{color:inherit}
   display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.55em 2.6em}
 .bd-grid li{min-width:0;display:flex;gap:.9em;align-items:flex-start;
   padding-bottom:.55em;border-bottom:1px solid rgba(255,255,255,.07)}
-/* the board is a 1270px screenshot, so the swatches are kept small on purpose —
+/* the board is a 1270px screenshot, so the swatches are kept small on purpose;
    blown up they just show the source's softness */
 .bd-sw{flex:0 0 auto;width:4.4em;height:3.2em;background-size:cover;background-position:center;
   border-radius:.16em;border:1px solid rgba(255,255,255,.14);box-shadow:0 .35em .9em rgba(0,0,0,.45)}
@@ -529,7 +529,7 @@ code{font-family:var(--f-mono);font-size:11.5px;color:var(--accent);background:r
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.14s!important}}
 
 /* =====================================================================
-   REDESIGN LAYER — Apple design language + Liquid Glass materials.
+   REDESIGN LAYER: Apple design language + Liquid Glass materials.
    Layout and navigation are untouched; this only re-skins.
    ===================================================================== */
 :root{
@@ -1077,7 +1077,7 @@ body,#app{background:var(--ground);color:var(--ink);font-family:var(--f-body);le
     <button class="close" data-close>Close</button>
     <div class="sheet-in">
       <h2>Slot map</h2>
-      <p class="lede">A slot address is <code>P2-R3-V2</code> — project 2, room 3, view 2. The landing scene of a project is <code>P2-FRONT</code>. Name a slot and what goes in it — an image, a title, a paragraph, or the metadata line — and it gets filled in. This table shows the project you're in.</p>
+      <p class="lede">A slot address is <code>P2-R3-V2</code>: project 2, room 3, view 2. The landing scene of a project is <code>P2-FRONT</code>. Name a slot and what goes in it (an image, a title, a paragraph, or the metadata line) and it gets filled in. This table shows the project you're in.</p>
       <div class="scrollx">
         <table class="map">
           <thead><tr><th>Slot</th><th>Where it appears</th><th>Holds</th></tr></thead>
@@ -1094,7 +1094,7 @@ body,#app{background:var(--ground);color:var(--ink);font-family:var(--f-body);le
       <p class="lede">Interior designer &amp; design technologist, based in Toronto.</p>
       <div class="about">
         <div class="about-bio">
-          <p>Carl Moscoso is an interior designer and design technologist based in Toronto, holding a three-year Advanced Diploma in Interior Design Technology from George Brown Polytechnic (2023). His work moves between concept and construction — space planning, presentation boards, and full drawing sets built in AutoCAD, Revit, SketchUp, and Rhino, rendered out in Enscape.</p>
+          <p>Carl Moscoso is an interior designer and design technologist based in Toronto, holding a three-year Advanced Diploma in Interior Design Technology from George Brown Polytechnic (2023). His work moves between concept and construction: space planning, presentation boards, and full drawing sets built in AutoCAD, Revit, SketchUp, and Rhino, rendered out in Enscape.</p>
           <p>Before design, six years in retail and e-commerce sharpened a different set of instincts: accuracy under deadline, composure under pressure, and a habit of seeing things through to the end. He has also built and maintained a brand’s website from the ground up, the same eye for composition and consistency he brings to a floor plan.</p>
         </div>
         <div class="about-side">
@@ -1225,7 +1225,7 @@ const ROOM_NAMES = {                           // renames a room in the rail, it
   "P6-R5": "Parametric Table",
   "P6-R6": "Soft Stool",
   "P6-R7": "Kitchen Millwork",
-  "P6-R8": "House Set \u2014 Part IV",
+  "P6-R8": "House Set - Part IV",
   "P6-R9": "Personal Renders",
   "P6-R10": "Aquarium Room",
   "P6-R11": "Restaurant Visualization",
@@ -1234,26 +1234,26 @@ const ROOM_NAMES = {                           // renames a room in the rail, it
   "P6-R14": "Illustrator Boards",
   "P6-R15": "Market Plan",
   "P6-R16": "Kitchen Plan Set",
-  "P6-R17": "House Set \u2014 Part II",
-  "P6-R18": "House Set \u2014 Part III",
+  "P6-R17": "House Set - Part II",
+  "P6-R18": "House Set - Part III",
   "P6-R19": "CAD Exercises & Tests",
   "P6-R20": "3D Photo Scan"
 };
 const VIEW_NAMES = {                          // per-view rail/caption label
-  "P2-S1": "Kitchen — Island",
-  "P2-S2": "Pendant — Detail",
-  "P2-S3": "Kitchen — Cooking Run",
-  "P2-S4": "Counter — Detail",
-  "P2-S5": "Backsplash — Detail",
-  "P2-S6": "Plan — From Above",
-  "P2-S7": "Sink — Storage",
+  "P2-S1": "Kitchen - Island",
+  "P2-S2": "Pendant - Detail",
+  "P2-S3": "Kitchen - Cooking Run",
+  "P2-S4": "Counter - Detail",
+  "P2-S5": "Backsplash - Detail",
+  "P2-S6": "Plan - From Above",
+  "P2-S7": "Sink - Storage",
   "P2-S8": "Breakfast Bar",
-  "P2-S9": "Bar — Corner Detail",
-  "P2-S10": "Bar — Surface",
+  "P2-S9": "Bar - Corner Detail",
+  "P2-S10": "Bar - Surface",
   "P2-S11": "Dining",
   "P2-S12": "Entry",
-  "P2-S13": "Entry — Side Table",
-  "P2-S14": "Entry — From Above",
+  "P2-S13": "Entry - Side Table",
+  "P2-S14": "Entry - From Above",
   "P1-R6-V1": "Tank Corridor",
   "P1-R6-V2": "Immersive Screen",
   "P1-R6-V3": "Aquatic Habits Kiosk",
@@ -1264,26 +1264,26 @@ const VIEW_NAMES = {                          // per-view rail/caption label
   "P3-R2-V1": "Living",
   "P3-R2-V2": "Evening Light",
   "P3-R3-V1": "Kitchen & Dining",
-  "P3-R3-V2": "Kitchen \u2014 Island",
+  "P3-R3-V2": "Kitchen - Island",
   "P3-R3-V3": "Dining Table",
-  "P3-R3-V4": "Kitchen \u2014 Daylight",
+  "P3-R3-V4": "Kitchen - Daylight",
   "P5-R3-V1": "Grill Island",
   "P5-R3-V2": "Long Table",
   "P5-R6-V1": "Concept & Plan",
   "P5-R6-V2": "Materials & Elevations",
   "P5-R6-V3": "Lighting & Furniture",
   "P6-R2-V1": "Daytime",
-  "P4-R1-V2": "Reception \u2014 Front",
-  "P4-R1-V3": "Reception \u2014 Angle",
-  "P5-R2-V2": "Host Stand \u2014 Lighting",
-  "P5-R3-V3": "Lighting \u2014 From Above",
-  "P5-R3-V4": "Lighting \u2014 Lounge",
-  "P5-R4-V2": "Lighting \u2014 Booths",
-  "P5-R4-V3": "Lighting \u2014 Screens",
-  "P5-R5-V2": "Lighting \u2014 Bar",
+  "P4-R1-V2": "Reception - Front",
+  "P4-R1-V3": "Reception - Angle",
+  "P5-R2-V2": "Host Stand - Lighting",
+  "P5-R3-V3": "Lighting - From Above",
+  "P5-R3-V4": "Lighting - Lounge",
+  "P5-R4-V2": "Lighting - Booths",
+  "P5-R4-V3": "Lighting - Screens",
+  "P5-R5-V2": "Lighting - Bar",
   "P6-R5-V5": "Variants",
   "P6-R5-V6": "3D, Side & Top",
-  "P6-R2-V3": "Assignment 4 \u2014 Day, Night, Stylized",
+  "P6-R2-V3": "Assignment 4 - Day, Night, Stylized",
   "P6-R9-V1": "Living Room",
   "P6-R9-V2": "Kitchen",
   "P6-R9-V3": "Bunker Home",
@@ -1292,8 +1292,8 @@ const VIEW_NAMES = {                          // per-view rail/caption label
   "P6-R11-V1": "Floor Plan",
   "P6-R11-V2": "Right Elevation",
   "P6-R11-V3": "Section Elevation",
-  "P6-R11-V4": "Perspective \u2014 Dining",
-  "P6-R11-V5": "Perspective \u2014 Patio",
+  "P6-R11-V4": "Perspective - Dining",
+  "P6-R11-V5": "Perspective - Patio",
   "P6-R12-V1": "Exterior",
   "P6-R12-V2": "Interior A",
   "P6-R12-V3": "Interior B",
@@ -1319,19 +1319,19 @@ const VIEW_NAMES = {                          // per-view rail/caption label
   "P6-R17-V8": "Right Elevation",
   "P6-R17-V9": "Roof Plan",
   "P6-R17-V10": "Rendered Elevation",
-  "P6-R18-V1": "Part III \u2014 1",
-  "P6-R18-V2": "Part III \u2014 2",
-  "P6-R18-V3": "Part III \u2014 3",
-  "P6-R18-V4": "Part III \u2014 4",
-  "P6-R18-V5": "Part III \u2014 5",
-  "P6-R18-V6": "T&S \u2014 Basement Plan",
-  "P6-R18-V7": "T&S \u2014 First Floor",
-  "P6-R18-V8": "T&S \u2014 Second Floor",
-  "P6-R18-V9": "T&S \u2014 Front Elevation",
-  "P6-R18-V10": "T&S \u2014 Rear Elevation",
-  "P6-R18-V11": "T&S \u2014 Left Elevation",
-  "P6-R18-V12": "T&S \u2014 Right Elevation",
-  "P6-R18-V13": "T&S \u2014 Roof Detail",
+  "P6-R18-V1": "Part III - 1",
+  "P6-R18-V2": "Part III - 2",
+  "P6-R18-V3": "Part III - 3",
+  "P6-R18-V4": "Part III - 4",
+  "P6-R18-V5": "Part III - 5",
+  "P6-R18-V6": "T&S - Basement Plan",
+  "P6-R18-V7": "T&S - First Floor",
+  "P6-R18-V8": "T&S - Second Floor",
+  "P6-R18-V9": "T&S - Front Elevation",
+  "P6-R18-V10": "T&S - Rear Elevation",
+  "P6-R18-V11": "T&S - Left Elevation",
+  "P6-R18-V12": "T&S - Right Elevation",
+  "P6-R18-V13": "T&S - Roof Detail",
   "P6-R19-V1": "Assignment 8",
   "P6-R19-V2": "Assignment 10",
   "P6-R19-V3": "Week 4",
@@ -1393,48 +1393,48 @@ const TEXT = {                                // per-slot copy; body may be a st
   ] },
   "P3-FRONT": { body: [
     "A narrow Toronto house, eighteen feet wide and forty deep, reworked over three floors. The plan is drawn from the working AutoCAD set; each marker opens the room it points to.",
-    "One pale palette runs through every level \u2014 herringbone oak, soft plaster and slatted timber \u2014 with each room given a single warmer gesture: a fireplace, a brass chandelier, a strip of lawn under open sky."
+    "One pale palette of herringbone oak, soft plaster and slatted timber runs through every level, with each room given a single warmer gesture: a fireplace, a brass chandelier, a strip of lawn under open sky."
   ] },
   "P2-S1": { body: "The room in one look: a sintered-stone island with a waterfall edge, fluted oak beneath it, and a dried-grass pendant carrying the only warm colour in the scheme." },
   "P2-S2": { body: "Looking down through the pendant. Pampas and dyed fern soften a plan that is otherwise all straight edges and matte stone." },
-  "P2-S3": { body: "The working wall — full-height cabinetry in near-black, reeded glass uppers washed teal from within, and a continuous counter that runs the corner without a visible joint." },
+  "P2-S3": { body: "The working wall has full-height cabinetry in near-black, reeded glass uppers washed teal from within, and a continuous counter that runs the corner without a visible joint." },
   "P2-S4": { body: "Close on the surface. A honed grey top holds its colour under warm light and stays matte against the gloss of cut fruit and a lacquered handle." },
   "P2-S5": { body: "Downlights graze the full-height backsplash, showing the texture the finish keeps when almost nothing else in the frame is lit." },
   "P2-S6": { body: "From overhead the plan resolves: the kitchen along one edge, a single shaft of daylight from the entry, and the floor left open between them." },
   "P2-S7": { body: "An oak-lined drawer breaks the dark run, and the counter returns square into the sink with the same stone wrapping the cut-out." },
-  "P2-S8": { body: "Three stools against a fluted oak wall under blackened cylinder pendants — the social edge of the plan, set well clear of the cooking side." },
+  "P2-S8": { body: "Three stools sit against a fluted oak wall under blackened cylinder pendants. This is the social edge of the plan, set well clear of the cooking side." },
   "P2-S9": { body: "Where the oak wall meets the floor, a recessed strip lifts the panelling off the boards and keeps the corner from going flat." },
   "P2-S10": { body: "The bar top in raking light: one long unbroken plane, thin at the edge, dark enough to read as a shadow of the wall behind it." },
   "P2-S11": { body: "A veined white top answers the grey of the kitchen. Split logs and a fire set into the wall give the dining end a warmth the cooking side never asks for." },
-  "P2-S12": { body: "Arrival is nearly empty — a door left ajar, one chair, one table. Here the daylight does the work the fittings do everywhere else." },
+  "P2-S12": { body: "Arrival is nearly empty: a door left ajar, one chair, one table. Here the daylight does the work the fittings do everywhere else." },
   "P2-S13": { body: "The same stone family at its smallest scale: a round top on a blackened base, holding two books and a pair of green glasses." },
   "P2-S14": { body: "Overhead at the threshold, with light from the open door falling across the boards." },
   "P1-FRONT": { body: [
     "A water-awareness centre at Bloor and Bathurst, Toronto. An aquarium, lecture halls, a water bar and eco-friendly retail make the case for cleaner water for people and aquatic life alike, with a quarter of profits going to Water First.",
-    "The plan is governed by one word \u2014 flowing. Reception gives way to lecture hall, retail kiosk, aquarium and finally the bar, a loop paced for crowds rather than queues. Materials darken the deeper you go, like the ocean: a bar built like a boat, fish underfoot for wayfinding, a bright mini-bar in the tanks like an island found at sea."
+    "The plan is governed by one word: flowing. Reception gives way to lecture hall, retail kiosk, aquarium and finally the bar, a loop paced for crowds rather than queues. Materials darken the deeper you go, like the ocean: a bar built like a boat, fish underfoot for wayfinding, a bright mini-bar in the tanks like an island found at sea."
   ] }
 };
 const ROOM_TEXT = {                            // copy for a whole room, used by every view in it
   "P6-R9": { body: "Self-directed Enscape renders made outside of class: a moody, gallery-like living room, a contemporary kitchen and a concrete bunker home in the snow.", meta: ["2023", "Personal Work", "SketchUp & Enscape"] },
-  "P6-R10": { body: "An aquarium-themed room rendered twice \u2014 daylight through the windows, then a night pass lit by the screen wall and accent lighting.", meta: ["2023", "Digital Practice \u2014 Assignment 4", "Revit"] },
-  "P6-R11": { body: "A rustic restaurant and patio documented in Revit: floor plan, two elevations and rendered perspectives of the dining room and covered patio.", meta: ["2023", "CADE 3014 \u2014 Assignment 3", "Revit"] },
-  "P6-R12": { body: "Interior and exterior studies of a brick-walled space modelled and rendered in Rhino.", meta: ["2023", "Rhino \u2014 Project 2, Part 1", "Rhino"] },
-  "P6-R13": { body: "An early SketchUp exercise: a modern two-storey house modelled from massing through to elevation.", meta: ["2020", "SketchUp \u2014 Assignment 01", "SketchUp"] },
-  "P6-R14": { body: "Presentation boards from Visual Communications: a construction-site container home with plan, section and views, and a small house shown in plan, section and elevation.", meta: ["2020", "ARCH 1050 \u2014 Visual Communications", "Illustrator"] },
-  "P6-R15": { body: "A market place plan for the Fall 2021 studio: galleries arranged around a central market under a patterned floor.", meta: ["2021", "Studio \u2014 Fall 2021", "AutoCAD"] },
+  "P6-R10": { body: "An aquarium-themed room rendered twice, first in daylight through the windows, then in a night pass lit by the screen wall and accent lighting.", meta: ["2023", "Digital Practice - Assignment 4", "Revit"] },
+  "P6-R11": { body: "A rustic restaurant and patio documented in Revit: floor plan, two elevations and rendered perspectives of the dining room and covered patio.", meta: ["2023", "CADE 3014 - Assignment 3", "Revit"] },
+  "P6-R12": { body: "Interior and exterior studies of a brick-walled space modelled and rendered in Rhino.", meta: ["2023", "Rhino - Project 2, Part 1", "Rhino"] },
+  "P6-R13": { body: "An early SketchUp exercise: a modern two-storey house modelled from massing through to elevation.", meta: ["2020", "SketchUp - Assignment 01", "SketchUp"] },
+  "P6-R14": { body: "Presentation boards from Visual Communications: a construction-site container home with plan, section and views, and a small house shown in plan, section and elevation.", meta: ["2020", "ARCH 1050 - Visual Communications", "Illustrator"] },
+  "P6-R15": { body: "A market place plan for the Fall 2021 studio: galleries arranged around a central market under a patterned floor.", meta: ["2021", "Studio - Fall 2021", "AutoCAD"] },
   "P6-R16": { body: "A kitchen plan package: partition, furniture, power, plumbing, reflected ceiling and wall finish plans for one small kitchen.", meta: ["2022", "Kitchen Plan Assignment", "AutoCAD"] },
-  "P6-R17": { body: "The second stage of the ARCH 1006 house set: site plan, three floor plans, four elevations, roof plan and a rendered elevation.", meta: ["2021", "ARCH 1006 \u2014 Part II", "AutoCAD"] },
-  "P6-R18": { body: "The third stage of the ARCH 1006 house set, followed by the T&S sheets: floor plans, elevations and a rear roof detail.", meta: ["2021", "ARCH 1006 \u2014 Part III", "AutoCAD"] },
+  "P6-R17": { body: "The second stage of the ARCH 1006 house set: site plan, three floor plans, four elevations, roof plan and a rendered elevation.", meta: ["2021", "ARCH 1006 - Part II", "AutoCAD"] },
+  "P6-R18": { body: "The third stage of the ARCH 1006 house set, followed by the T&S sheets: floor plans, elevations and a rear roof detail.", meta: ["2021", "ARCH 1006 - Part III", "AutoCAD"] },
   "P6-R19": { body: "Shorter AutoCAD exercises and in-class tests: sections, plans and elevations drawn to deadline.", meta: ["2021", "AutoCAD Exercises & Tests", "AutoCAD"] },
   "P6-R20": { body: "A photogrammetry exercise: a sneaker photographed from every angle, then rebuilt as a textured 3D model.", meta: ["2022", "3D Photo Scan", "Photogrammetry"] },
   "P6-R1": { body: "A showroom fit-out for Teknion: a locker and lounge space where the brand's display boards and seating sit among white lockers, banquettes and a snack wall, rendered as a gathering for an event.", meta: ["2022", "Showroom Study", "SketchUp & Enscape"] },
-  "P6-R2": { body: "One living room lit twice in Revit — a daylit pass with sun through the glazing, then a night pass carried by a pendant ring and a backlit wall feature.", meta: ["2022", "Assignment 2 — Intro to Lighting", "Revit"] },
+  "P6-R2": { body: "One living room lit twice in Revit, first as a daylit pass with sun through the glazing, then as a night pass carried by a pendant ring and a backlit wall feature.", meta: ["2022", "Assignment 2 - Intro to Lighting", "Revit"] },
   "P6-R3": { body: "A Revit rendering exercise: a ribbed timber gallery built around a suspended skeleton, with the precedent board that set its direction.", meta: ["2022", "Rendering Project", "Revit"] },
   "P6-R4": { body: "A pavilion of layered, curving timber ribs modelled in Rhino, shown with the inspiration board behind its form.", meta: ["2023", "Rendering Project", "Rhino"] },
   "P6-R5": { body: "A parametric side table generated in Dynamo: a curved wire cage under a round top, from study images and prototype variations to the final form.", meta: ["2022", "Parametric Furniture", "Dynamo & Revit"] },
-  "P6-R6": { body: "The Seriously Super Stupid Soft Stool: a playful upholstered stool inspired by a sheep, followed from case study and concept through materials and joinery to shop drawings and a poster.", meta: ["2022", "DSGN 2011 — Stool Project", "Hand Drafting & Fabrication"] },
-  "P6-R7": { body: "Working drawings and materials for a kitchen millwork package: reference photos, rough work, then plan, elevation, section and table details.", meta: ["2022", "DSGN3025 — Assignment 01", "AutoCAD"] },
-  "P6-R8": { body: "A full working drawing set for a two-storey house: site plan, three floor plans, four elevations, a building section, wall section and construction notes, alongside the front render.", meta: ["2021", "ARCH 1006 — Part IV", "AutoCAD"] },
+  "P6-R6": { body: "The Seriously Super Stupid Soft Stool: a playful upholstered stool inspired by a sheep, followed from case study and concept through materials and joinery to shop drawings and a poster.", meta: ["2022", "DSGN 2011 - Stool Project", "Hand Drafting & Fabrication"] },
+  "P6-R7": { body: "Working drawings and materials for a kitchen millwork package: reference photos, rough work, then plan, elevation, section and table details.", meta: ["2022", "DSGN3025 - Assignment 01", "AutoCAD"] },
+  "P6-R8": { body: "A full working drawing set for a two-storey house: site plan, three floor plans, four elevations, a building section, wall section and construction notes, alongside the front render.", meta: ["2021", "ARCH 1006 - Part IV", "AutoCAD"] },
   "P5-R1": { body: "The storefront: a glazed corner wrapped in black cladding, with the Mayon Grill sign lit above the door." },
   "P5-R2": { body: "Guests arrive at the host stand under the star-lit ceiling, with the grill island and its woven stools in view straight ahead." },
   "P5-R3": { body: "The heart of the room is the BBQ island: guests sit around built-in grills and fire bowls, while long tables laid with banana leaves run alongside." },
@@ -1455,10 +1455,10 @@ const ROOM_TEXT = {                            // copy for a whole room, used by
   "P3-R6": { body: "The basement turns recreational: a lounge with a curved sofa opens onto an indoor archery lane, laid in turf beneath an open lightwell." },
   "P1-R6": { body: [
     "The route's lowest point: a corridor of floor-to-ceiling tanks in board-formed concrete, where interpretive kiosks are set flush into the benches rather than mounted on stands, so the water stays the only thing lit.",
-    "A curved LED wall turns one tank into an immersive dive — whales and a diver scaled past the glass — while underfoot, glowing fish icons in the floor lead visitors on toward the mini-bar. Kiosk screens carry conservation data and habitat notes, keeping the room as instructive as it is theatrical."
+    "A curved LED wall turns one tank into an immersive dive, with whales and a diver scaled past the glass, while underfoot, glowing fish icons in the floor lead visitors on toward the mini-bar. Kiosk screens carry conservation data and habitat notes, keeping the room as instructive as it is theatrical."
   ] },
   "P1-R5": { body: [
-    "The pit-stop inside the aquarium — an island found mid-journey. Whitewashed brick, rattan and an encaustic-tile counter lift the palette at the darkest point of the route.",
+    "This is the pit-stop inside the aquarium, an island found mid-journey. Whitewashed brick, rattan and an encaustic-tile counter lift the palette at the darkest point of the route.",
     "A timber sail rises past the counter and a tank glows behind it, so the sea carries on while you stop. The brighter, natural materials are the treasure at the bottom."
   ] },
   "P1-R4": { body: [
@@ -1467,14 +1467,14 @@ const ROOM_TEXT = {                            // copy for a whole room, used by
   ] },
   "P1-R3": { body: [
     "Lectures are pitched at whoever is in the room, and here that is the youngest visitors: bean bags and moulded stools instead of rows, a curved wall, and a screen the size of it where an animated host takes questions live.",
-    "The palette steps away from the public route \u2014 sage, mint and pale timber, an arched niche of soft toys, a cushioned window seat \u2014 so the teaching rooms read closer to a nursery than a theatre."
+    "The palette steps away from the public route with sage, mint and pale timber, an arched niche of soft toys and a cushioned window seat, so the teaching rooms read closer to a nursery than a theatre."
   ] },
   "P1-R2": { body: [
     "Back of house gets the same care as the floor. A slatted oak wall, a high communal table and a round marble one give staff somewhere to eat, brief and decompress between shifts, with a kitchenette at one end and no visitors in sight.",
-    "The blue upholstery is the tell \u2014 the one room where the aquarium\u2019s colour leaves the tanks and lands on the furniture. A split-face stone panel, lit turquoise along its top edge, runs the length of the counter, so the water is present even off duty."
+    "The blue upholstery is the tell. This is the one room where the aquarium\u2019s colour leaves the tanks and lands on the furniture. A split-face stone panel, lit turquoise along its top edge, runs the length of the counter, so the water is present even off duty."
   ] },
   "P1-R1": { body: [
-    "The aquarium draws people in, but the water bar is the point \u2014 a tasting counter of waters drawn from streams around the world, each at a different pH and TDS, so visitors can taste the difference and learn what it does to the body.",
+    "The aquarium draws people in, but the water bar is the point: a tasting counter of waters drawn from streams around the world, each at a different pH and TDS, so visitors can taste the difference and learn what it does to the body.",
     "Materials come from aquatic and island building: rattan pendants, brick, stone and dense planting. Overhead, a parametric slat wall of timber fins swells and curls into the ceiling, so the room reads as a wave breaking over the dining floor."
   ] }
 };
@@ -1533,7 +1533,7 @@ async function saveNow(){
   setSave("saving\u2026", "work");
   try {
     // Preferred: publish just the small data file. Some hosts don't serve the files
-    // form at all — they answer capability_disabled — so fall back to republishing
+    // form at all (they answer capability_disabled), so fall back to republishing
     // the whole document, which every host supports.
     if(FILES_OK){
       try {
@@ -1566,7 +1566,7 @@ async function saveNow(){
       setSave("too large to save", "err");
     } else {
       dirty = true;
-      setSave("save failed (" + code + ") \u2014 retrying", "err");
+      setSave("save failed (" + code + "), retrying", "err");
       clearTimeout(saveTimer); saveTimer = setTimeout(saveNow, 4000);
     }
   } finally {
@@ -1659,14 +1659,14 @@ const MARKS = {
    spot, a cone opening out to an inset frame holding the close-up. Click either to view it large.
    x/y/r are % of the rendered image (r of its width); box = [left %, top %, width %] of the image. */
 const ZOOMS = {
-  "P4-R1-V2": [{ z: "P4-Z2", n: "Countertop \u2014 Detail", x: 44, y: 38, r: 4.5, box: [8, 20, 19] },
-               { z: "P4-Z3", n: "Lit Edge \u2014 Detail", x: 73, y: 50, r: 4, box: [76, 21, 17] }],
-  "P5-R3-V3": [{ z: "P5-Z1", n: "Grill Island \u2014 From Above", x: 46, y: 45, r: 6, box: [64, 23, 20] }],
-  "P4-R1-V1": [{ z: "P4-Z1", n: "Reception Desk \u2014 Detail", x: 75, y: 68, r: 6, box: [28, 8, 21] }],
-  "P3-R3-V2": [{ z: "P3-Z1", n: "Sink \u2014 Detail",      x: 85,   y: 61, r: 5.5, box: [55, 7, 22] }],
-  "P3-R5-V1": [{ z: "P3-Z2", n: "Shower Wall \u2014 Detail", x: 47,   y: 33, r: 5,   box: [16, 9, 20] },
-               { z: "P3-Z4", n: "Tub Surround \u2014 Detail", x: 70,   y: 81, r: 5,   box: [76, 47, 20] }],
-  "P3-R6-V1": [{ z: "P3-Z5", n: "Stair Treads \u2014 Detail", x: 92,  y: 68, r: 3.8, box: [64, 10, 22] }]
+  "P4-R1-V2": [{ z: "P4-Z2", n: "Countertop - Detail", x: 44, y: 38, r: 4.5, box: [8, 20, 19] },
+               { z: "P4-Z3", n: "Lit Edge - Detail", x: 73, y: 50, r: 4, box: [76, 21, 17] }],
+  "P5-R3-V3": [{ z: "P5-Z1", n: "Grill Island - From Above", x: 46, y: 45, r: 6, box: [64, 23, 20] }],
+  "P4-R1-V1": [{ z: "P4-Z1", n: "Reception Desk - Detail", x: 75, y: 68, r: 6, box: [28, 8, 21] }],
+  "P3-R3-V2": [{ z: "P3-Z1", n: "Sink - Detail",      x: 85,   y: 61, r: 5.5, box: [55, 7, 22] }],
+  "P3-R5-V1": [{ z: "P3-Z2", n: "Shower Wall - Detail", x: 47,   y: 33, r: 5,   box: [16, 9, 20] },
+               { z: "P3-Z4", n: "Tub Surround - Detail", x: 70,   y: 81, r: 5,   box: [76, 47, 20] }],
+  "P3-R6-V1": [{ z: "P3-Z5", n: "Stair Treads - Detail", x: 92,  y: 68, r: 3.8, box: [64, 10, 22] }]
 };
 
 const FRONT_LABEL = "Main";                   // the landing room's name, in the rail and eyebrow
@@ -1678,7 +1678,7 @@ const BACK_LABEL  = { p1: "Iso view", p3: "Floor plan", p4: "Elevations", p5: "F
 const ABOUT_ROWS = [
   ["Discipline","Interior Design & Space Planning"],
   ["Software","AutoCAD · Revit · SketchUp · Rhino · Enscape · Dynamo · Photoshop"],
-  ["Education","Adv. Diploma, Interior Design Technology — George Brown Polytechnic, 2023"],
+  ["Education","Adv. Diploma, Interior Design Technology - George Brown Polytechnic, 2023"],
   ["Location","Toronto, ON"],
   ["Contact","carlbenedictmoscoso@gmail.com · linkedin.com/in/carl-moscoso"]
 ];
@@ -1745,7 +1745,7 @@ function render(){
   app.classList.toggle("img-on", !!img);
   app.classList.toggle("tone-light", !!img && fit.tone === "light");
   app.style.setProperty("--tone-bg", fit.bg || "#DEE6F7");
-  $("#slotcard").innerHTML = `<div class="id">${sid}</div><div class="st">Empty — no image assigned</div>`;
+  $("#slotcard").innerHTML = `<div class="id">${sid}</div><div class="st">Empty - no image assigned</div>`;
 
   const t = TEXT[sid] || ROOM_TEXT[P.id.toUpperCase() + "-" + r.id.toUpperCase()] || {};
   const vname = VIEW_NAMES[sid];
@@ -1763,7 +1763,7 @@ function render(){
   $("#caption").dataset.def = JSON.stringify({ title: defTitle, body: defBody, meta: defMeta });
   const ce = editingText ? ' contenteditable="plaintext-only" spellcheck="false"' : "";
   $("#caption").innerHTML = `
-    ${r.id === "front" ? `<p class="eyebrow">${r.slides ? (vname || "") : r.n}${img ? "" : " \u2014 slot " + sid}</p>` : ""}
+    ${r.id === "front" ? `<p class="eyebrow">${r.slides ? (vname || "") : r.n}${img ? "" : " - slot " + sid}</p>` : ""}
     <h1${ce} data-f="title">${title}</h1>
     ${bodies.map((par, bi) => `<p class="body"${ce} data-f="body" data-i="${bi}">${par}</p>`).join("")}
     <div class="meta">${meta.map((m, mi) => `<span${ce} data-f="meta" data-i="${mi}">${m}</span>`).join("")}</div>`;
@@ -1852,11 +1852,11 @@ function render(){
       <span>${p.n}</span><i>${SLIDESHOW[p.id] ? slideCount(p) + " renders" : (roomsOf(p).length - 1) + (p.id === "p6" ? " studies" : " rooms")}</i></button>`).join("");
 
   /* explore */
-  $("#exploreTitle").textContent = P.n + (SLIDESHOW[P.id] ? " \u2014 renders" : " \u2014 rooms");
+  $("#exploreTitle").textContent = P.n + (SLIDESHOW[P.id] ? " - renders" : " - rooms");
   $("#exploreGrid").innerHTML = rooms.map(x => `
     <button class="card" data-room="${x.id}">
       <div class="ph" ${SLOT_IMG[slotId(P, x, 0)] ? `style="background-image:url('${SLOT_IMG[slotId(P, x, 0)]}');background-size:cover;background-position:center"` : ""}>${SLOT_IMG[slotId(P, x, 0)] ? "" : `<b>${slotId(P, x, 0)}</b>`}</div>
-      <div class="cb"><p class="cn">${x.n}</p><p class="cs">${x.views} slot${x.views > 1 ? "s" : ""} — empty</p></div>
+      <div class="cb"><p class="cn">${x.n}</p><p class="cs">${x.views} slot${x.views > 1 ? "s" : ""} - empty</p></div>
     </button>`).join("");
 
   /* slot map */
@@ -1864,13 +1864,13 @@ function render(){
     Array.from({length: x.views}, (_, i) => `<tr>
       <td>${slotId(P, x, i)}</td>
       <td>${P.n}, ${x.n}${x.views > 1 ? ", view " + (i + 1) : ""}</td>
-      <td>${SLOT_IMG[slotId(P, x, i)] ? "Image set" : "Empty"} — ${i === 0
+      <td>${SLOT_IMG[slotId(P, x, i)] ? "Image set" : "Empty"} - ${i === 0
         ? "scene image, title, paragraph, metadata" + (x.spots ? ", plus 4 hotspot links" : "")
         : "scene image + view name"}</td>
     </tr>`)).join("");
 
   $("#projcount").textContent = PROJECTS.length + " Projects";
-  document.title = (r.id === "front" ? P.n : P.n + " · " + r.n) + " — Rooms by Carl Moscoso";
+  document.title = (r.id === "front" ? P.n : P.n + " · " + r.n) + " - Rooms by Carl Moscoso";
 }
 
 /* ---------- routing ---------- */
@@ -2023,7 +2023,7 @@ function renderLibrary(){
     <header class="lib-head">
       <p class="eyebrow">Library \u00b7 ${LIBRARY.length} studies</p>
       <h1>${P.n}</h1>
-      <p class="lib-intro">Shorter assignments, software studies and personal work \u2014 rendering in Enscape, Revit and Rhino, form-finding in Dynamo, presentation boards and full AutoCAD drawing sets. Pick a study to step through it.</p>
+      <p class="lib-intro">Shorter assignments, software studies and personal work, including rendering in Enscape, Revit and Rhino, form-finding in Dynamo, presentation boards and full AutoCAD drawing sets. Pick a study to step through it.</p>
       <div class="lib-filter" role="group" aria-label="Filter studies">${LIB_KINDS.map(([k, n]) =>
         `<button data-libfilter="${k}" aria-pressed="${k === LIB_FILTER}">${n}</button>`).join("")}</div>
     </header>
